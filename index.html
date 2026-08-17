@@ -3,105 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PMSHRI GUPS Mohanpura Nokha, Bikaner, Rajasthan">
 <title>PMSHRI GUPS MOHANPURA NOKHA</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:#1f2937;background:#f7f9fc}
-header{background:linear-gradient(135deg,#0b5ed7,#174ea6);color:white;padding:18px 7%;position:sticky;top:0;z-index:10}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;font-size:20px}.nav a{color:white;text-decoration:none;margin-left:18px;font-size:14px}
-.hero{padding:80px 7%;background:linear-gradient(135deg,#eaf3ff,#fff);text-align:center}.hero h1{font-size:42px;margin:10px 0;color:#123b76}.hero p{font-size:20px}.btn{display:inline-block;padding:12px 22px;border-radius:8px;background:#0b5ed7;color:white;text-decoration:none;margin:8px}
-section{padding:55px 7%;max-width:1200px;margin:auto}h2{text-align:center;color:#123b76;margin-bottom:30px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:white;padding:22px;border-radius:14px;box-shadow:0 5px 20px #00000012}
-.staff{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.staff .card h3{margin:0 0 8px;color:#174ea6}.role{font-size:14px;color:#666}
-.notice{border-left:5px solid #0b5ed7;padding:14px 18px;background:white;margin:10px 0;border-radius:8px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}.placeholder{height:180px;border-radius:12px;background:#e9eef5;display:flex;align-items:center;justify-content:center;color:#777}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.qr{display:flex;justify-content:center;align-items:center}.qr img{width:210px;background:white;padding:10px;border-radius:12px}
-footer{background:#123b76;color:white;text-align:center;padding:25px}
-@media(max-width:700px){.nav{display:block}.nav a{display:inline-block;margin:10px 8px 0 0}.hero h1{font-size:30px}.contact{grid-template-columns:1fr}}
+:root{--primary:#c75b12;--primary2:#e07a1f;--dark:#17110b;--bg:#fff4e8;--card:#fffaf4;--text:#17110b;--muted:#5f5148;--accent:#f4a300}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+header{color:#111;position:sticky;top:0;z-index:100;background:rgba(224,122,31,.97);color:#111;box-shadow:0 3px 18px #0002}
+.nav{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
+nav a{color:#111;text-decoration:none;margin-left:17px;font-weight:600;font-size:14px}
+nav a:hover{text-decoration:underline}
+.hero{color:#111;background:linear-gradient(135deg,#c85a0a,#f09a3e);color:#111;text-align:center;padding:75px 20px 85px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#ffffff12;right:-160px;top:-180px}
+.hero-logo{font-size:70px}
+.hero h1{color:#111;font-size:clamp(30px,5vw,52px);margin:10px auto 8px;max-width:900px;line-height:1.15}
+.hero p{color:#111;font-size:18px;margin:8px auto;max-width:780px}
+.btn{display:inline-block;background:#fff;color:var(--primary);padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:800;margin:12px 5px;box-shadow:0 5px 15px #0002}
+.btn.primary{background:var(--accent);color:#172033}
+.container{max-width:1200px;margin:auto;padding:58px 20px}
+section{scroll-margin-top:80px}
+.section-title{text-align:center;color:var(--primary);font-size:30px;margin:0 0 10px}
+.section-sub{text-align:center;color:var(--muted);margin:0 auto 30px;max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border-radius:18px;padding:24px;box-shadow:0 8px 30px #183b7a12;border:1px solid #e5eaf5}
+.card h3{color:var(--primary);margin-top:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;margin-top:28px}
+.stat{background:#fff;padding:22px;border-radius:16px;text-align:center;box-shadow:0 7px 24px #00000010}
+.stat b{display:block;font-size:28px;color:var(--primary)}
+.staff-card{text-align:center}
+.avatar{width:86px;height:86px;border-radius:50%;margin:0 auto 12px;background:linear-gradient(135deg,#dce9ff,#eef4ff);display:flex;align-items:center;justify-content:center;font-size:42px}
+.staff-card h3{margin:4px 0;color:var(--dark)}
+.role{color:var(--muted);font-size:14px}
+.notice{border-left:5px solid var(--primary2);padding:16px 18px;background:#fff;border-radius:10px;margin:12px 0;box-shadow:0 4px 15px #0000000b}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.photo-box{height:190px;border-radius:16px;background:linear-gradient(135deg,#e7eefc,#f8fbff);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-weight:700;border:2px dashed #b8c7e5}
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+.qr{text-align:center}.qr img{width:min(230px,100%);background:#fff;padding:12px;border-radius:15px}
+footer{background:#8f3d08;color:#fff;text-align:center;padding:28px 20px}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:760px){.nav{display:block;text-align:center}.brand{justify-content:center;margin-bottom:8px}nav a{display:inline-block;margin:5px 7px}.contact-grid{grid-template-columns:1fr}.hero{padding-top:55px}}
 </style>
 </head>
 <body>
 
 <header>
 <div class="nav">
-<div class="brand">🏫 PMSHRI GUPS MOHANPURA</div>
-<div>
-<a href="#home">Home</a><a href="#about">About</a><a href="#staff">Staff</a>
+<div class="brand"><img src="pmshri-logo.png" alt="PM SHRI Logo" style="height:42px;width:auto;vertical-align:middle"> PMSHRI GUPS MOHANPURA</div>
+<nav>
+<a href="#home">Home</a><a href="#about">विद्यालय</a><a href="#staff">Staff</a><a href="#classes">Classes</a>
 <a href="#notices">Notices</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
-</div>
+</nav>
 </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-<div style="font-size:54px">🏫</div>
+<div class="hero-logo">🏫</div>
 <h1>PMSHRI GUPS MOHANPURA NOKHA</h1>
 <p>बीकानेर, राजस्थान — 413941</p>
-<p>विद्यालय की आधिकारिक जानकारी, सूचनाएँ एवं गतिविधियाँ</p>
-<a class="btn" href="#about">विद्यालय के बारे में</a>
-<a class="btn" href="#contact">Location देखें</a>
+<p>विद्यालय की आधिकारिक जानकारी, सूचनाएँ, उपलब्धियाँ एवं गतिविधियाँ</p>
+<a class="btn primary" href="#about">विद्यालय के बारे में</a>
+<a class="btn" href="https://maps.app.goo.gl/1k1DqdF2s9NLwmZ28?g_st=ac" target="_blank">📍 Location देखें</a>
 </section>
 
-<section id="about">
-<h2>विद्यालय परिचय</h2>
-<div class="cards">
-<div class="card"><h3>🏫 विद्यालय</h3><p>PMSHRI GUPS MOHANPURA NOKHA (BIKANER)</p></div>
-<div class="card"><h3>👨‍🏫 स्टाफ</h3><p>कुल 10 सदस्य — 9 शिक्षक एवं 1 Supporting Staff</p></div>
-<div class="card"><h3>📚 कक्षाएँ</h3><p>विद्यालय की शैक्षणिक गतिविधियों एवं अध्ययन सामग्री की जानकारी यहाँ उपलब्ध कराई जा सकती है।</p></div>
-<div class="card"><h3>🌱 PM SHRI</h3><p>विद्यालय की शैक्षणिक, सह-शैक्षणिक एवं विकासात्मक गतिविधियों की जानकारी।</p></div>
+<section class="container" id="about">
+<h2 class="section-title">विद्यालय परिचय</h2>
+<p class="section-sub">PM SHRI GUPS Mohanpura Nokha का आधिकारिक विद्यालय पोर्टल — यहाँ विद्यालय से संबंधित प्रमुख जानकारी एक स्थान पर उपलब्ध रहेगी।</p>
+<div class="grid">
+<div class="card"><h3>🏫 हमारा विद्यालय</h3><p>PMSHRI GUPS MOHANPURA NOKHA, Bikaner, Rajasthan — PIN 413941.</p></div>
+<div class="card"><h3>👨‍🏫 हमारा स्टाफ</h3><p>कुल 10 सदस्य — 9 शिक्षक एवं 1 Supporting Staff.</p></div>
+<div class="card"><h3>📚 शिक्षा</h3><p>शैक्षणिक गतिविधियाँ, अध्ययन सामग्री और विद्यालय की उपलब्धियाँ समय-समय पर यहाँ जोड़ी जाएँगी।</p></div>
+<div class="card"><h3>🌱 PM SHRI</h3><p>PM SHRI के अंतर्गत विद्यालय की नवाचार, सह-शैक्षणिक एवं विकासात्मक गतिविधियों की जानकारी।</p></div>
+</div>
+<div class="stats">
+<div class="stat"><b>10</b>कुल स्टाफ</div>
+<div class="stat"><b>9</b>शिक्षक</div>
+<div class="stat"><b>1</b>Supporting Staff</div>
+<div class="stat"><b>413941</b>PIN Code</div>
 </div>
 </section>
 
-<section id="staff">
-<h2>हमारा स्टाफ</h2>
-<div class="staff">
-<div class="card"><h3>Amanaram Jakhar</h3><div class="role">प्रधानाध्यापक • Hindi</div></div>
-<div class="card"><h3>Anil Dadhich</h3><div class="role">Teacher • English</div></div>
-<div class="card"><h3>Neelkanth Sharma</h3><div class="role">Teacher • Science / Maths</div></div>
-<div class="card"><h3>Babulal Choudhary</h3><div class="role">Teacher • Social Studies</div></div>
-<div class="card"><h3>Dhannaram Meghwal</h3><div class="role">Teacher • SST</div></div>
-<div class="card"><h3>Ganpat Ram Bishnoi</h3><div class="role">Teacher • Hindi</div></div>
-<div class="card"><h3>Roomali Meena</h3><div class="role">Teacher • SST</div></div>
-<div class="card"><h3>Santosh Chouhan</h3><div class="role">Level 1 Teacher</div></div>
-<div class="card"><h3>Sitaram Saran</h3><div class="role">PET</div></div>
-<div class="card"><h3>Pushpa Devi</h3><div class="role">Supporting Staff</div></div>
+<section class="container" id="staff">
+<h2 class="section-title">👨‍🏫 हमारा स्टाफ</h2>
+<p class="section-sub">स्टाफ की फोटो बाद में इसी सेक्शन में आसानी से जोड़ी जा सकती हैं।</p>
+<div class="grid">
+<div class="card staff-card"><div class="avatar">👨‍🏫</div><h3>Amanaram Jakhar</h3><div class="role">Hindi • Experience: 8 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👨‍🏫</div><h3>Anil Dadhich</h3><div class="role">English • Experience: 3 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👨‍🏫</div><h3>Neelkanth Sharma</h3><div class="role">Science / Maths • Experience: 13 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👨‍🏫</div><h3>Babulal Choudhary</h3><div class="role">Social Studies • Experience: 14 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👨‍🏫</div><h3>Dhannaram Meghwal</h3><div class="role">Hindi • Experience: 18 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👨‍🏫</div><h3>Ganpat Ram Bishnoi</h3><div class="role">Hindi • Experience: 14 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👩‍🏫</div><h3>Roomali Meena</h3><div class="role">SST • Experience: 4 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👩‍🏫</div><h3>Santosh Chouhan</h3><div class="role">Level 1 Teacher • Experience: 14 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">🏃</div><h3>Sitaram Saran</h3><div class="role">PET • Experience: 36 वर्ष</div></div>
+<div class="card staff-card"><div class="avatar">👩</div><h3>Pushpa Devi</h3><div class="role">Supporting Staff • Experience: 8 वर्ष</div></div>
 </div>
 </section>
 
-<section id="notices">
-<h2>📢 Notice Board</h2>
-<div class="notice">विद्यालय की नवीनतम सूचना यहाँ प्रदर्शित की जाएगी।</div>
-<div class="notice">महत्वपूर्ण आदेश एवं PDF यहाँ जोड़े जा सकते हैं।</div>
-<div class="notice">आगामी कार्यक्रमों की जानकारी यहाँ उपलब्ध होगी।</div>
-</section>
 
-<section id="gallery">
-<h2>🖼️ Photo Gallery</h2>
-<div class="gallery">
-<div class="placeholder">School Photo — बाद में जोड़ें</div>
-<div class="placeholder">School Activity — बाद में जोड़ें</div>
-<div class="placeholder">PM SHRI Activity — बाद में जोड़ें</div>
-<div class="placeholder">Events — बाद में जोड़ें</div>
+
+<section class="container" id="classes">
+<h2 class="section-title">📚 विद्यार्थी नामांकन</h2>
+<p class="section-sub">बालवाटिका (Nursery) से कक्षा 8 तक कुल विद्यार्थी</p>
+
+<div class="card" style="text-align:center;padding:35px 20px;background:linear-gradient(135deg,#fff1df,#fffaf4);border:2px solid #e7a25e">
+<div style="font-size:16px;font-weight:800;color:#8f3d08;text-transform:uppercase;letter-spacing:1px">Total Students</div>
+<div style="font-size:68px;line-height:1.05;font-weight:900;color:#111;margin:8px 0">195</div>
+<div style="font-size:18px;font-weight:700;color:#5f5148">👦 Boys: 87 &nbsp; | &nbsp; 👧 Girls: 108</div>
+<button id="enrollBtn" onclick="toggleEnrollment()" style="margin-top:22px;border:0;border-radius:12px;background:#c75b12;color:#fff;padding:14px 24px;font-size:16px;font-weight:800;cursor:pointer;box-shadow:0 5px 15px #0002">
+Click for Class-wise Enrollment List ▼
+</button>
+</div>
+
+<div id="enrollmentList" style="display:none;margin-top:22px">
+<div class="card" style="overflow:auto">
+<table style="width:100%;border-collapse:collapse;min-width:520px">
+<thead><tr style="background:#f3c28e">
+<th style="padding:13px;text-align:left">कक्षा</th>
+<th style="padding:13px">बालक (Boys)</th>
+<th style="padding:13px">बालिका (Girls)</th>
+<th style="padding:13px">कुल</th>
+</tr></thead>
+<tbody><tr><td>बालवाटिका / Nursery</td><td>3</td><td>9</td><td><b>12</b></td></tr>
+<tr><td>LKG</td><td>3</td><td>8</td><td><b>11</b></td></tr>
+<tr><td>UKG</td><td>9</td><td>4</td><td><b>13</b></td></tr>
+<tr><td>कक्षा 1</td><td>6</td><td>7</td><td><b>13</b></td></tr>
+<tr><td>कक्षा 2</td><td>17</td><td>7</td><td><b>24</b></td></tr>
+<tr><td>कक्षा 3</td><td>6</td><td>10</td><td><b>16</b></td></tr>
+<tr><td>कक्षा 4</td><td>9</td><td>10</td><td><b>19</b></td></tr>
+<tr><td>कक्षा 5</td><td>12</td><td>13</td><td><b>25</b></td></tr>
+<tr><td>कक्षा 6</td><td>8</td><td>13</td><td><b>21</b></td></tr>
+<tr><td>कक्षा 7</td><td>8</td><td>16</td><td><b>24</b></td></tr>
+<tr><td>कक्षा 8</td><td>6</td><td>11</td><td><b>17</b></td></tr></tbody>
+<tfoot><tr style="background:#ffe4c2;font-weight:900">
+<td style="padding:14px">कुल</td><td style="padding:14px">87</td><td style="padding:14px">108</td><td style="padding:14px">195</td>
+</tr></tfoot>
+</table>
+</div>
 </div>
 </section>
 
-<section id="contact">
-<h2>📍 संपर्क एवं स्थान</h2>
-<div class="contact">
+
+<section class="container" id="notices">
+<h2 class="section-title">📢 Notice Board</h2>
+<p class="section-sub">नई सूचनाएँ और महत्वपूर्ण घोषणाएँ यहाँ जोड़ी जाएँगी।</p>
+<div class="notice"><b>विद्यालय सूचना</b><br>नवीनतम सूचना यहाँ प्रकाशित की जाएगी।</div>
+<div class="notice"><b>महत्वपूर्ण आदेश</b><br>आदेश / PDF / कार्यक्रम की जानकारी यहाँ जोड़ी जा सकती है।</div>
+</section>
+
+<section class="container" id="gallery">
+<h2 class="section-title">🖼️ Photo Gallery</h2>
+<p class="section-sub">विद्यालय की गतिविधियों और कार्यक्रमों की तस्वीरें यहाँ प्रदर्शित की जाएँगी।</p>
+<div id="gallery-grid" class="gallery">
+<div class="photo-box">📷<br>Photos loading...</div>
+</div>
+<p class="small" style="text-align:center;margin-top:18px">
+नई फोटो जोड़ने के लिए GitHub में <b>gallery</b> folder में केवल photo upload करें। Website gallery अपने-आप update हो जाएगी।
+</p>
+</section>
+
+<section class="container" id="contact">
+<h2 class="section-title">📍 संपर्क एवं स्थान</h2>
+<div class="contact-grid">
 <div class="card">
 <h3>PMSHRI GUPS MOHANPURA NOKHA</h3>
 <p><b>स्थान:</b> Nokha, Bikaner, Rajasthan</p>
 <p><b>PIN:</b> 413941</p>
 <p><b>प्रधानाध्यापक:</b> Amanaram Jakhar</p>
-<a class="btn" href="https://maps.app.goo.gl/1k1DqdF2s9NLwmZ28?g_st=ac" target="_blank">Google Maps खोलें</a>
+<a class="btn primary" href="https://maps.app.goo.gl/1k1DqdF2s9NLwmZ28?g_st=ac" target="_blank">Google Maps खोलें</a>
 </div>
-<div class="qr"><div><img src="location-qr.png" alt="School Location QR"><p style="text-align:center"><b>Location QR Scan करें</b></p></div></div>
+<div class="card qr">
+<img src="location-qr.png" alt="School Location QR">
+<p><b>📱 Location QR Scan करें</b></p>
+</div>
 </div>
 </section>
 </main>
 
 <footer>
 © PMSHRI GUPS MOHANPURA NOKHA (BIKANER) • 413941<br>
-School Website
+<span class="small" style="color:#fff">Official School Website</span>
 </footer>
+
+<script>
+(async function(){
+  const grid = document.getElementById("gallery-grid");
+  const owner = "pmshrimohanpura";
+  const repo = "pmshrimohanpura.github.io";
+  const folder = "gallery";
+  const api = `https://api.github.com/repos/${owner}/${repo}/contents/${folder}`;
+  const imageExt = /\.(jpg|jpeg|png|webp|gif)$/i;
+  try {
+    const res = await fetch(api, {headers: {"Accept":"application/vnd.github+json"}});
+    if (!res.ok) throw new Error("Gallery folder not found");
+    const files = await res.json();
+    const photos = files.filter(f => f.type === "file" && imageExt.test(f.name));
+    if (!photos.length) {
+      grid.innerHTML = '<div class="photo-box">📷<br>अभी कोई फोटो नहीं है<br><span class="small">GitHub के gallery folder में फोटो upload करें</span></div>';
+      return;
+    }
+    grid.innerHTML = photos.map(f => `
+      <a href="${f.download_url}" target="_blank" style="text-decoration:none">
+        <img src="${f.download_url}" alt="${f.name}" loading="lazy"
+             style="width:100%;height:190px;object-fit:cover;border-radius:16px;display:block;box-shadow:0 6px 20px #0002">
+      </a>`).join("");
+  } catch(e) {
+    grid.innerHTML = '<div class="photo-box">📷<br>Gallery जल्द उपलब्ध होगी</div>';
+  }
+})();
+</script>
+
+
+<script>
+function toggleEnrollment(){
+  const box=document.getElementById("enrollmentList");
+  const btn=document.getElementById("enrollBtn");
+  const open=box.style.display!=="none";
+  box.style.display=open?"none":"block";
+  btn.innerHTML=open?"Click for Class-wise Enrollment List ▼":"Hide Class-wise Enrollment List ▲";
+  if(!open) setTimeout(()=>box.scrollIntoView({behavior:"smooth",block:"start"}),80);
+}
+</script>
+
 </body>
 </html>
